@@ -1,0 +1,15 @@
+{
+    "name": "lambdacasserole/learning-from-disaster",
+    "description": "Using text classification to predict disaster survival.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saul Johnson",
+            "email": "saul.a.johnson@gmail.com"
+        }
+    ],
+    "require": {
+        "camspiers/statistical-classifier": "^0.8.0"
+    }
+}
