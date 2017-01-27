@@ -44,3 +44,11 @@ fabric.properties
 # Composer
 /vendor/
 /composer.phar
+
+# Generated data
+/data/db_training.json
+/data/db_testing.json
+/db/*
+
+# Kept folders
+!.gitkeep

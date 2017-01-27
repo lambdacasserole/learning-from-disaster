@@ -17,4 +17,4 @@ $testing = array_slice($database, $half);
 
 // Write training and testing files.
 file_put_contents(__DIR__ . '/data/db_training.json', json_encode($training));
-file_put_contents(__DIR__ . '/data/db_test.json', json_encode($testing));
+file_put_contents(__DIR__ . '/data/db_testing.json', json_encode($testing));
