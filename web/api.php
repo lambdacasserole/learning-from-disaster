@@ -4,7 +4,7 @@ require_once __DIR__ . '/../neural.php';
 require_once __DIR__ . '/../training/functions.php';
 
 /**
- * Returns true if all given keys are set in the request super-global.
+ * Returns true if all given keys are set in the get super-global.
  *
  * @param array $keys   the keys to check
  * @return bool         true if all keys were set, otherwise false
@@ -12,7 +12,7 @@ require_once __DIR__ . '/../training/functions.php';
 function allSet($keys) {
     $present = true;
     foreach ($keys as $key) {
-        $present = $present && isset($_REQUEST[$key]);
+        $present = $present && isset($_GET[$key]);
     }
     return $present;
 }
