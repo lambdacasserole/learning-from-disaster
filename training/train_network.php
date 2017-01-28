@@ -62,5 +62,5 @@ foreach($testing_data as $row) {
 $percentage = round(($correct / $total) * 100);
 echo "Network guessed correctly in $correct/$total cases ($percentage%)\n";
 
-//
+// Save network.
 $network->save(__DIR__ . '/../network.nn');
