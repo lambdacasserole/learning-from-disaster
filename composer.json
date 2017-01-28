@@ -1,6 +1,6 @@
 {
     "name": "lambdacasserole/learning-from-disaster",
-    "description": "Using text classification to predict disaster survival.",
+    "description": "Using a neural network to predict disaster survival.",
     "type": "project",
     "license": "MIT",
     "authors": [

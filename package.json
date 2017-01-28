@@ -1,0 +1,27 @@
+{
+  "name": "learning-from-disaster",
+  "version": "1.0.0",
+  "description": "Using a neural network to predict disaster survival.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambdacasserole/learning-from-disaster.git"
+  },
+  "keywords": [
+    "disaster",
+    "titanic",
+    "neural",
+    "network",
+    "survival",
+    "predict"
+  ],
+  "author": "Saul Johnson <saul.a.johnson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambdacasserole/learning-from-disaster/issues"
+  },
+  "homepage": "https://github.com/lambdacasserole/learning-from-disaster#readme"
+}
