@@ -10,7 +10,6 @@
         }
     ],
     "require": {
-        "camspiers/statistical-classifier": "^0.8.0",
         "lambdacasserole/condense": "^1.0"
     }
 }
