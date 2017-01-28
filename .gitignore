@@ -58,6 +58,7 @@ fabric.properties
 
 # Compiled code
 /web/css/
+/web/js/
 
 # Kept folders
 !.gitkeep

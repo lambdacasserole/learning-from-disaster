@@ -8,25 +8,8 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        function showProbability(p) {
-            var per = Math.round(p * 100);
-            var s = $('.results');
-            s.show();
-            $('#probability').html(per);
-        }
-
-        function go() {
-            var s = $('#age').val();
-            var ss = $('#cabin_class').val();
-            var sss = $('#sex').val();
-            var url = 'api.php?age=' + s + '&class=' + ss + '&sex=' + sss;
-            $.getJSON( url, function( data ) {
-                showProbability(data.probability);
-            });
-        }
-    </script>
-    <title>Authenticated - Minim</title>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title>Would You Survive?</title>
 </head>
 <body>
 <div class="container">
@@ -47,7 +30,7 @@
                     <label for="age">
                         Age:
                     </label>
-                    <input type="number" class="form-control" id="age" name="age">
+                    <input type="number" class="form-control" id="age" name="age" value="18">
                 </div>
                 <div class="form-group">
                     <label for="sex">
@@ -75,14 +58,15 @@
     <div class="row results" style="display:none">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <span id="probability"></span>%
-        </div>
-        <div class="col-md-3"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <hr>
+            <div class="well">
+                <p><span class="comment"></span> I calculate a...</p>
+                <p class="probability">
+                    <span class="percentage"></span>%
+                </p>
+                <p>
+                    Chance that you make it out alive.
+                </p>
+            </div>
         </div>
         <div class="col-md-3"></div>
     </div>
@@ -90,6 +74,13 @@
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <button onclick="go();" class="btn btn-lg btn-success btn-block margin-bottom-plus">Would I Survive?</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <hr>
         </div>
         <div class="col-md-3"></div>
     </div>
