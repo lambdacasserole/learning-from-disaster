@@ -46,9 +46,9 @@ fabric.properties
 /composer.phar
 
 # Generated data
-/data/db_training.json
-/data/db_testing.json
-/db/*
+/data/data_training.json
+/data/data_testing.json
+/training/db/*
 
 # Kept folders
 !.gitkeep

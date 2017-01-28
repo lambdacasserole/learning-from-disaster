@@ -1,11 +1,11 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 require_once 'functions.php';
-require_once 'neural.php';
+require_once __DIR__ . '/../neural.php';
 
 // Load training database.
-$training_db = new \Condense\Database('passengers_training');
+$training_db = new \Condense\Database('training');
 $training_data = $training_db->select();
 $training_data_size = count($training_data);
 
@@ -43,7 +43,7 @@ if ($success) {
 }
 
 // Load testing data.
-$testing_db = new \Condense\Database('passengers_testing');
+$testing_db = new \Condense\Database('testing');
 $testing_data = $testing_db->select();
 
 // Test network on other half of data.
@@ -63,4 +63,4 @@ $percentage = round(($correct / $total) * 100);
 echo "Network guessed correctly in $correct/$total cases ($percentage%)\n";
 
 //
-$network->save('network_' . $correct . '_' . $total . '.network');
+$network->save(__DIR__ . '/../network.nn');
