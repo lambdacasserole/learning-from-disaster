@@ -45,6 +45,12 @@ fabric.properties
 /vendor/
 /composer.phar
 
+# NPM
+/node_modules/
+
+# Bower
+/web/bower_components/
+
 # Generated data
 /data/data_training.json
 /data/data_testing.json

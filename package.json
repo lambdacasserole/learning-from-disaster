@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/lambdacasserole/learning-from-disaster/issues"
   },
-  "homepage": "https://github.com/lambdacasserole/learning-from-disaster#readme"
+  "homepage": "https://github.com/lambdacasserole/learning-from-disaster#readme",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "learning-from-disaster",
+  "description": "Using a neural network to predict disaster survival.",
+  "main": "index.js",
+  "authors": [
+    "Saul Johnson <saul.a.johnson@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "disaster",
+    "titanic",
+    "neural",
+    "network",
+    "survival",
+    "predict"
+  ],
+  "homepage": "https://github.com/lambdacasserole/learning-from-disaster",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./web/bower_components",
+    "test",
+    "tests"
+  ]
+}
