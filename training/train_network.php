@@ -1,8 +1,10 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once 'functions.php';
 require_once __DIR__ . '/../neural.php';
+
+use LearningFromDisaster\Console;
+use LearningFromDisaster\Training;
 
 // Load training database.
 $training_db = new \Condense\Database('training');
@@ -17,9 +19,9 @@ $network->setVerbose(false);
 $message_length = 0;
 $row_number = 1;
 foreach ($training_data as $row) {
-    erase($message_length); // Remove previous message.
-    $message_length = countAndPrint("Adding row $row_number of $training_data_size");
-    $network->addTestData(quantify($row), [intval($row['survived'])]);
+    Console::erase($message_length); // Remove previous message.
+    $message_length = Console::countAndPrint("Adding row $row_number of $training_data_size");
+    $network->addTestData(Training::quantify($row), [intval($row['survived'])]);
     $row_number++;
 }
 echo "\nFinished adding training data.\n";
@@ -50,7 +52,7 @@ $testing_data = $testing_db->select();
 $total = 0;
 $correct = 0;
 foreach($testing_data as $row) {
-    $certainty = $network->calculate(quantify($row));
+    $certainty = $network->calculate(Training::quantify($row));
     $answer = $certainty[0] < 0.5 ? 0 : 1;
     if ($answer == intval($row['survived'])) {
         $correct++;
