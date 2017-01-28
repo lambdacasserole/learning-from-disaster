@@ -2,8 +2,10 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+// Names of databases to move.
 $databases = ['training', 'testing'];
 foreach ($databases as $name) {
+
     // Initialize database, delete it if it exists.
     $db = new \Condense\Database('passengers_' . $name);
     $db->delete();
