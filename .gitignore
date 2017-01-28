@@ -56,5 +56,8 @@ fabric.properties
 /data/data_testing.json
 /training/db/*
 
+# Compiled code
+/web/css/
+
 # Kept folders
 !.gitkeep

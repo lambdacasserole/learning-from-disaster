@@ -3,6 +3,20 @@
 require_once __DIR__ . '/../neural.php';
 require_once __DIR__ . '/../training/functions.php';
 
+/**
+ * Returns true if all given keys are set in the request super-global.
+ *
+ * @param array $keys   the keys to check
+ * @return bool         true if all keys were set, otherwise false
+ */
+function allSet($keys) {
+    $present = true;
+    foreach ($keys as $key) {
+        $present = $present && isset($_REQUEST[$key]);
+    }
+    return $present;
+}
+
 // Check required fields have been supplied.
 if (allSet(['sex', 'age', 'class'])) {
 

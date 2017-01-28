@@ -1,42 +1,44 @@
-<html>
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Authenticated - Minim</title>
+</head>
 <body>
-<?php
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="/svg/logo.svg" class="logo">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
 
-/**
- * Returns true if all given keys are set in the request super-global.
- *
- * @param array $keys   the keys to check
- * @return bool         true if all keys were set, otherwise false
- */
-function allSet($keys) {
-    $present = true;
-    foreach ($keys as $key) {
-        $present = $present && isset($_REQUEST[$key]);
-    }
-    return $present;
-}
-
-// If all keys set, we have a form submission.
-if (allSet(['sex', 'age', 'class'])) {
-    require_once __DIR__ . '/../neural.php';
-    require_once __DIR__ . '/../training/functions.php';
-// Initialize network, turn verbose output off.
-    $network = new NeuralNetwork(5, 6, 1);
-    $network->setVerbose(false);
-    $network->load(__DIR__ . '/../network.nn');
-    $gg = $network->calculate(quantify([
-        'sex' => $_GET['sex'],
-        'age' => $_GET['age'],
-        'class' => $_GET['class']
-    ]));
-    echo $gg[0];
-}
-?>
-<form method="get">
-    Age:<input type="text" name="age"><br>
-    Sex:<input type="text" name="sex"><br>
-    Class:<input type="text" name="class"><br>
-    <input type="submit">
-</form>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a class="btn btn-lg btn-info btn-block margin-bottom-plus" href="logout.php">Logout</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-muted text-center small copyright">
+            Would You Survive? | Copyright &copy; Saul Johnson
+        </div>
+    </div>
+</div>
 </body>
 </html>
