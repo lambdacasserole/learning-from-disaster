@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b17e3cfa208d7593bac5ec371c19e600",
+    "content-hash": "df79367903406271fdf4ccaec6e1baf2",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -67,16 +67,16 @@
         },
         {
             "name": "lambdacasserole/brainy",
-            "version": "v1.2",
+            "version": "v1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lambdacasserole/brainy.git",
-                "reference": "bcb9153566cfb474517ebc8ea85f7fee23bc7167"
+                "reference": "0c45b9308127ebebe7b7115cb4f65ba7b185c88c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lambdacasserole/brainy/zipball/bcb9153566cfb474517ebc8ea85f7fee23bc7167",
-                "reference": "bcb9153566cfb474517ebc8ea85f7fee23bc7167",
+                "url": "https://api.github.com/repos/lambdacasserole/brainy/zipball/0c45b9308127ebebe7b7115cb4f65ba7b185c88c",
+                "reference": "0c45b9308127ebebe7b7115cb4f65ba7b185c88c",
                 "shasum": ""
             },
             "type": "library",
@@ -96,7 +96,7 @@
                 }
             ],
             "description": "Neural network implementation in PHP, packaged for Composer.",
-            "time": "2017-01-30T12:54:30+00:00"
+            "time": "2017-01-30T15:16:54+00:00"
         },
         {
             "name": "lambdacasserole/condense",
