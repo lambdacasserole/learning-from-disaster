@@ -57,6 +57,9 @@ fabric.properties
 /data/data_testing.json
 /training/db/*
 
+# Generated network
+/network.nn
+
 # Compiled code
 /web/css/
 /web/js/
