@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e52af366a292851c54ae7d05e4b715e9",
+    "content-hash": "b17e3cfa208d7593bac5ec371c19e600",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -100,16 +100,16 @@
         },
         {
             "name": "lambdacasserole/condense",
-            "version": "v1.0",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lambdacasserole/condense.git",
-                "reference": "8b7037cd24d99b602f43933ca86684db135b9d12"
+                "reference": "dcbe8d7ca5ee0909a0df7c47e493311d130cbe9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lambdacasserole/condense/zipball/8b7037cd24d99b602f43933ca86684db135b9d12",
-                "reference": "8b7037cd24d99b602f43933ca86684db135b9d12",
+                "url": "https://api.github.com/repos/lambdacasserole/condense/zipball/dcbe8d7ca5ee0909a0df7c47e493311d130cbe9d",
+                "reference": "dcbe8d7ca5ee0909a0df7c47e493311d130cbe9d",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 }
             ],
             "description": "Flat-file database in PHP.",
-            "time": "2017-01-24T20:08:14+00:00"
+            "time": "2017-01-30T14:35:04+00:00"
         },
         {
             "name": "paragonie/random_compat",
