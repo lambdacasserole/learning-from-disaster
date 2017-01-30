@@ -13,7 +13,7 @@ $filtered = [];
 foreach ($database as $row) {
     $add = true;
     foreach ($row as $column) {
-        if (empty($column)) {
+        if ($column === "") {
             $add = false;
         }
     }

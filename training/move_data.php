@@ -28,4 +28,6 @@ foreach ($databases as $name) {
         $db->insert($entry);
         $current++;
     }
+
+    echo "\n";
 }
