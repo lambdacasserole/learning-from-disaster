@@ -1,8 +1,8 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../neural.php';
 
+use Brainy\NeuralNetwork;
 use LearningFromDisaster\Request;
 use LearningFromDisaster\Training;
 
@@ -11,7 +11,6 @@ if (Request::allSet(['sex', 'age', 'class'])) {
 
     // Initialize neural network.
     $network = new NeuralNetwork(5, 6, 1);
-    $network->setVerbose(false);
 
     // Load pre-trained network.
     $network->load(__DIR__ . '/../network.nn');
