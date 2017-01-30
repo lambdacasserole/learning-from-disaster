@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "lambdacasserole/condense": "^1.0"
+        "lambdacasserole/condense": "^1.0",
+        "lambdacasserole/brainy": "^1.0"
     },
     "autoload": {
         "psr-4": {
