@@ -11,14 +11,14 @@ echo "Filtering...\n";
 // Filter out any rows with unset fields.
 $filtered = [];
 foreach ($database as $row) {
+    $add = true;
     foreach ($row as $column) {
-        $add = true;
         if (empty($column)) {
             $add = false;
         }
-        if ($add) {
-            $filtered[] = $row;
-        }
+    }
+    if ($add) {
+        $filtered[] = $row;
     }
 }
 
