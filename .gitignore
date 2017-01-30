@@ -52,6 +52,7 @@ fabric.properties
 /web/bower_components/
 
 # Generated data
+/data/data_filtered.json
 /data/data_training.json
 /data/data_testing.json
 /training/db/*

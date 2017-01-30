@@ -12,7 +12,7 @@ $training_db = new Database('training');
 $training_data = $training_db->select();
 $training_data_size = count($training_data);
 
-// Initialize network, turn verbose output off.
+// Initialize network.
 $network = new NeuralNetwork(5, 6, 1);
 
 // Add training data.
