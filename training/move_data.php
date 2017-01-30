@@ -2,12 +2,14 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use Condense\Database;
+
 // Names of databases to move.
 $databases = ['training', 'testing'];
 foreach ($databases as $name) {
 
     // Initialize database, delete it if it exists.
-    $db = new \Condense\Database($name);
+    $db = new Database($name);
     $db->delete();
 
     // Load entries from JSON.
