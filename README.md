@@ -1,6 +1,8 @@
 # Learning from Disaster
 Using a neural network to predict disaster survival.
 
+![Screenshot](screenshot.png)
+
 ## Prerequisites
 You'll need to have a web server installed and configured with PHP for this to work. I really recommend [XAMPP](https://www.apachefriends.org/), especially for Windows users. Once you've done that you can proceed.
 
