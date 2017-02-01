@@ -40,3 +40,22 @@ gulp
 ```
 
 This command will need running again every time you make a change to a Less or CoffeeScript file. If you're working on them, run `gulp watch` in a terminal to watch for file changes and compile accordingly.
+
+## Training
+You'll need to run the following commands from the `training` directory to prepare the neural network for use from the web application.
+
+```bash
+php filter_data.php # Remove any data we can't work with.
+php split_data.php # Randomise filtered data and split into training and testing sets.
+php move_data.php # Move data from JSON to Condense database file.
+php train_network.php # Train the neural network and save it to a file.
+```
+
+## Running
+You can run this using PHP's built-in web server for testing purposes if you like. From the web directory:
+
+```bash
+php -S localhost:8080
+```
+
+Then navigate to `http://localhost:8080/` in your browser.
